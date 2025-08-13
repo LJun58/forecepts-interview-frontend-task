@@ -97,6 +97,7 @@ function closeHotelDetailModal() {
               <font-awesome-icon icon="fa-solid fa-circle-info" /> Vicinity: Beach front, F&B,
               Entertainment, Shopping
             </p>
+            <span class="tooltiptext">Beach front, F&B, Entertainment, Shopping</span>
           </div>
           <hr />
 
@@ -322,5 +323,28 @@ hr {
   .destination-buttons button {
     flex: 1 1 100%;
   }
+}
+.vicinity-info {
+  position: relative;
+}
+
+.vicinity-info .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: black;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+  text-wrap: nowrap;
+
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+}
+
+.vicinity-info:hover .tooltiptext {
+  visibility: visible;
 }
 </style>
