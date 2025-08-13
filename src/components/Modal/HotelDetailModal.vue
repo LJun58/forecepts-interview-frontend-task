@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted, onUnmounted, ref, nextTick, Transition } from 'vue'
-import BookFlightHotelForm from '@/components/BookFlightHotelSearchForm.vue'
+import BookFlightHotelForm from '@/components/Modal/BookFlightHotelSearchForm.vue'
 
 defineProps({
   hotel: Object,

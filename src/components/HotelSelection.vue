@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 import { hotels } from '@/data/hotels'
 import { hotelDetails } from '@/data/hotelDetails'
-import HotelModal from '@/components/HotelDetailModal.vue'
+import HotelModal from '@/components/Modal/HotelDetailModal.vue'
 
 const destinations = [...new Set(hotels.map((h) => h.city))]
 const selectedDestination = ref(destinations[0])
