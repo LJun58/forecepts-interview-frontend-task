@@ -1,0 +1,30 @@
+export const trips = [
+  {
+    id: 'japan-5d4n',
+    title: 'Singapore to Japan Holiday 5D4N',
+    departure: 'Singapore / Kuala Lumpur',
+    destination: 'Tokyo / Kyoto / Fukuoka',
+    airline: 'Singapore Airlines',
+    airlineLogo: '/src/assets/img/logo/singapore-airlines.svg',
+    images: [
+      '/src/assets/img/kyoto.png',
+      '/src/assets/img/tokyo.png',
+      '/src/assets/img/fukuoka.png',
+    ],
+    salesDateFrom: '2025 May 07',
+    salesDateTo: '2025 August 31',
+    departureDateFrom: '2025 May 07',
+    departureDateTo: '2025 August 31',
+  },
+  {
+    id: 'malaysia-3d2n',
+    title: 'Singapore to Malaysia Holiday 3D2N',
+    departure: 'Singapore',
+    destination: 'Kuala Lumpur / Penang',
+    airline: 'AirAsia',
+    airlineLogo: '@/assets/img/logo/airasia.svg',
+    image: '@/assets/img/kualalumpur.png',
+    salesDate: '2025 June 01 ~ 2025 September 30',
+    departureDate: '2025 June 05 ~ 2025 October 15',
+  },
+]
