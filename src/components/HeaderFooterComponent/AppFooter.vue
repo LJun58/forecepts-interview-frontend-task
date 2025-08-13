@@ -25,7 +25,7 @@ export default {
   height: 68px;
   width: 100%;
   box-sizing: border-box;
-  padding: 0 20px;
+  padding: 0 8%;
   top: 0;
 }
 

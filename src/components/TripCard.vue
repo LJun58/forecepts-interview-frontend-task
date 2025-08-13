@@ -175,16 +175,6 @@ function prevImage() {
   background-color: #e0e0e0;
 }
 
-/* @media (min-width: 769px) {
-  .date-box:not(:last-child) {
-    border-right: 1px solid #c7cdd7;
-  }
-
-  .date-box:last-child {
-    padding-left: 10%;
-  }
-} */
-
 @media (max-width: 900px) {
   .date-box {
     border-right: none;

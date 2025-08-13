@@ -323,49 +323,6 @@ const amenityIcons = {
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
-  .gallery-flex {
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px repeat(4, 120px);
-    height: auto;
-  }
-
-  .gallery-main {
-    grid-row: 1;
-    grid-column: 1;
-  }
-
-  .gallery-side {
-    grid-column: 1;
-    grid-row: 2 / 6;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 8px;
-  }
-}
-
-@media (max-width: 480px) {
-  .gallery-flex {
-    gap: 4px;
-    height: auto;
-    grid-template-rows: 180px repeat(4, 100px);
-  }
-
-  .gallery-side {
-    gap: 4px;
-  }
-
-  .video-preview::after {
-    width: 36px;
-    height: 36px;
-  }
-
-  .video-preview::before {
-    font-size: 14px;
-  }
-}
-
 /* Hotel Main info section */
 .hotel-info {
   display: flex;

@@ -315,13 +315,7 @@ hr {
   text-overflow: ellipsis;
 }
 
-/* @media (max-width: 900px) {
-  .hotel-card {
-    flex: 1 1 calc(50% - 16px);
-  }
-} */
-
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .hotel-card {
     flex: 1 1 100%;
   }

@@ -28,8 +28,8 @@ export default {
   height: 60px;
   width: 100%;
   box-sizing: border-box;
-  padding: 0 20px;
   top: 0;
+  padding: 0 8%;
 }
 
 nav {
