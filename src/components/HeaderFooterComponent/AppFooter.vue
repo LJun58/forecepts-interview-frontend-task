@@ -17,7 +17,7 @@ export default {
 
 <style>
 .footer {
-  background-color: #012a72;
+  background-color: #15181e;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,7 +25,7 @@ export default {
   height: 68px;
   width: 100%;
   box-sizing: border-box;
-  padding: 0 8%;
+  padding: 0 3%;
   top: 0;
 }
 

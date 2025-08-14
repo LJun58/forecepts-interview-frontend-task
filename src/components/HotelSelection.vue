@@ -90,9 +90,9 @@ function closeHotelDetailModal() {
             </div>
           </div>
 
+          <hr />
           <!-- vicinity -->
           <div class="card-section vicinity-info">
-            <hr />
             <p class="vicinity-text">
               <font-awesome-icon icon="fa-solid fa-circle-info" /> Vicinity: Beach front, F&B,
               Entertainment, Shopping
@@ -105,10 +105,7 @@ function closeHotelDetailModal() {
           <div class="card-section gift-info">
             <img alt="Gift icons" class="gift-icon" src="@/assets/img/icons/giftIcon.svg" />
             <div class="gift-text-info">
-              <p>
-                <span><strong>1 of 6 Great Gifts</strong></span
-                >(Valued at SDG100)
-              </p>
+              <p><span>Pick 1 of 6 Great Gifts</span>(Valued at SDG100)</p>
             </div>
           </div>
           <hr />
@@ -143,6 +140,11 @@ function closeHotelDetailModal() {
 </template>
 
 <style scoped>
+p,
+a {
+  font-size: 14px;
+}
+
 hr {
   border: none;
   border-top: 1px dashed #c7cdd7;
@@ -169,6 +171,7 @@ hr {
 
 .destination-buttons button {
   font-size: 18px;
+  font-weight: 600;
   height: 44px;
   padding: 8px 16px;
   border: 1px solid #e0e4ea;
@@ -188,7 +191,7 @@ hr {
 .hotel-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 25px;
   justify-content: center;
 }
 
@@ -214,7 +217,7 @@ hr {
 }
 
 .card-content {
-  padding: 40px;
+  padding: 20px;
   padding-top: 20px;
 }
 
@@ -236,7 +239,12 @@ hr {
 }
 
 .hotel-info {
-  min-height: 180px;
+  min-height: 150px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .hotel-card p,
@@ -279,11 +287,12 @@ hr {
 
 .gift-info span {
   display: block;
+  font-weight: 600;
 }
 
 .price {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 700px;
   color: #111;
 }
 
@@ -299,14 +308,14 @@ hr {
 }
 
 .deal-btn {
-  background-color: #0057ff;
+  background-color: #094ac1;
   color: white;
   font-size: 14px;
   padding: 12px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: auto;
   transition: background-color 0.2s;
 }
@@ -332,6 +341,7 @@ hr {
 .vicinity-info {
   position: relative;
   z-index: 0;
+  margin: 12px 0;
 }
 
 .vicinity-info .tooltiptext {

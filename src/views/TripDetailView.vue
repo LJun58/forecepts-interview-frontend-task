@@ -35,7 +35,9 @@ onUnmounted(() => {
 
 <template>
   <div v-if="trip">
-    <RouterLink to="/">&#8592; Back to Selection</RouterLink>
+    <RouterLink style="text-decoration: none; color: inherit" to="/"
+      ><p class="back-link">&#8592; Back to Selection</p></RouterLink
+    >
     <TripCard :trip="trip" />
     <HotelSelection />
     <RulesCondition />
@@ -49,6 +51,12 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
+.back-link {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
 .scroll-top-btn {
   position: fixed;
   bottom: 30px;

@@ -32,15 +32,9 @@ function prevImage() {
       <h2>{{ trip.title }}</h2>
       <div class="info-section">
         <div class="card-info">
-          <p>
-            <span>Departure: </span><strong>{{ trip.departure }}</strong>
-          </p>
-          <p>
-            <span>Destination: </span><strong>{{ trip.destination }}</strong>
-          </p>
-          <p>
-            <span>Airline: </span><strong>{{ trip.airline }}</strong>
-          </p>
+          <p><span>Departure: </span>{{ trip.departure }}</p>
+          <p><span>Destination: </span>{{ trip.destination }}</p>
+          <p><span>Airline: </span>{{ trip.airline }}</p>
         </div>
         <div class="airline-logo">
           <img :src="trip.airlineLogo" :alt="trip.airline" />
@@ -49,15 +43,11 @@ function prevImage() {
 
       <div class="dates-section">
         <div class="date-box">
-          <p>
-            <span>Sales Date </span
-            ><strong>{{ trip.salesDateFrom }} ~ {{ trip.salesDateTo }}</strong>
-          </p>
+          <p><span>Sales Date </span>{{ trip.salesDateFrom }} ~ {{ trip.salesDateTo }}</p>
         </div>
         <div class="date-box">
           <p>
-            <span>Departure Date </span
-            ><strong>{{ trip.departureDateFrom }} ~ {{ trip.departureDateTo }}</strong>
+            <span>Departure Date </span>{{ trip.departureDateFrom }} ~ {{ trip.departureDateTo }}
           </p>
         </div>
       </div>
@@ -66,11 +56,25 @@ function prevImage() {
 </template>
 
 <style scoped>
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+span {
+  font-weight: 400;
+}
+
 .card {
   display: flex;
   flex-wrap: wrap;
   background: #ffffff;
-  border-radius: 12px;
+  border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -87,7 +91,7 @@ function prevImage() {
 }
 
 .card-content {
-  flex: 1.2;
+  flex: 1.5;
   padding: 0px 30px;
   display: flex;
   flex-direction: column;

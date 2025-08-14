@@ -27,9 +27,17 @@ const rulesConditions = ref(rulesCondition)
 
 .rules-and-conditions h3 {
   font-size: 22px;
+  font-weight: 600;
 }
 
 .rules-and-conditions li {
   font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.rules-and-conditions ul {
+  margin: 0;
+  padding-left: 25px;
 }
 </style>
