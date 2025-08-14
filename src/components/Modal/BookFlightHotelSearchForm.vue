@@ -1,5 +1,7 @@
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+import { useRouter } from 'vue-router'
+const router = useRouter()
 
 const from = ref('Kuala Lumpur')
 const departing = ref('2025-05-07')
@@ -47,15 +49,30 @@ onBeforeUnmount(() => {
   document.removeEventListener('click', handleClickOutside)
 })
 
+// function search() {
+//   console.log({
+//     from: from.value,
+//     departing: departing.value,
+//     returning: returning.value,
+//     travelClass: travelClass.value,
+//     adults: adults.value,
+//     children: children.value,
+//     rooms: rooms.value,
+//   })
+// }
+
 function search() {
-  console.log({
-    from: from.value,
-    departing: departing.value,
-    returning: returning.value,
-    travelClass: travelClass.value,
-    adults: adults.value,
-    children: children.value,
-    rooms: rooms.value,
+  router.push({
+    name: 'SearchResults',
+    query: {
+      from: from.value,
+      departing: departing.value,
+      returning: returning.value,
+      travelClass: travelClass.value,
+      rooms: rooms.value,
+      adults: adults.value,
+      children: children.value,
+    },
   })
 }
 

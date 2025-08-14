@@ -199,6 +199,7 @@ const amenityIcons = {
   justify-content: center;
   align-items: flex-start;
   padding: 2rem 0;
+  z-index: 1;
 }
 .modal {
   background: white;

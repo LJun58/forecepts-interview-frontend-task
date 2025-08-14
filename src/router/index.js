@@ -13,6 +13,11 @@ const router = createRouter({
       name: 'TripDetailView',
       component: () => import('@/views/TripDetailView.vue'),
     },
+    {
+      path: '/search',
+      name: 'SearchResults',
+      component: () => import('@/views/SearchResultsView.vue'),
+    },
   ],
 })
 

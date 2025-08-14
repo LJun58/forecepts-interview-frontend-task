@@ -160,6 +160,11 @@ hr {
   flex-wrap: wrap;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 8px;
+
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
 }
 
 .destination-buttons button {
@@ -326,6 +331,7 @@ hr {
 }
 .vicinity-info {
   position: relative;
+  z-index: 0;
 }
 
 .vicinity-info .tooltiptext {
@@ -340,7 +346,7 @@ hr {
   text-wrap: nowrap;
 
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   top: 100%;
 }
 
